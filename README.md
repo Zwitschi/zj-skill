@@ -8,6 +8,14 @@ for agent CLIs that can read repository instructions and work with files.
 worked examples are included. The public architecture and scope are described in
 [`docs/architecture.md`](docs/architecture.md).
 
+## Quick links
+
+- [Install per agent](docs/INSTALL.md)
+- [Workflows and handoff](docs/WORKFLOWS.md)
+- [Compatibility matrix](docs/COMPATIBILITY.md)
+- [Reference](docs/REFERENCE.md)
+- [Examples](docs/EXAMPLES.md)
+
 ## Skills
 
 ### zj-baseline-cv
