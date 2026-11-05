@@ -142,8 +142,8 @@ Publication is the rights holder's action, not part of the preparation.
 
 - The examples are a contract walkthrough, not a full independent run of every
   workflow.
-- Install is tested with Pi 1.5.0 and Codex CLI 0.166.0; other agents are
-  documented-only.
+- Install is tested with Pi 1.5.0 and Codex CLI 0.166.0. Aider 0.86.2 prompt
+  fallback loading is tested. Other agents are documented-only.
 - Lightweight CI runs the public checks on every push and pull request. It does
   not run live agent tests.
 - The license restricts use and redistribution. Do not describe the package as
