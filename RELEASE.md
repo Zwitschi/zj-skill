@@ -144,6 +144,7 @@ Publication is the rights holder's action, not part of the preparation.
   workflow.
 - Install is tested with Pi 1.5.0 and Codex CLI 0.166.0; other agents are
   documented-only.
-- No automated test suite exists yet; the checks are documented and manual.
+- Lightweight CI runs the public checks on every push and pull request. It does
+  not run live agent tests.
 - The license restricts use and redistribution. Do not describe the package as
   open source.

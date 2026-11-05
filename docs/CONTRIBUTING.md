@@ -29,6 +29,7 @@ Status: complete. Contributions must keep the package generic and evidence-based
 Before a change is accepted:
 
 ```bash
+python3 scripts/check.py
 python3 scripts/build_bundle.py
 python3 -m py_compile scripts/build_bundle.py
 npx prettier --check "**/*.md"   # if the workspace has Prettier

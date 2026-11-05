@@ -73,6 +73,13 @@ Checked 2026-11-05.
 - Frontmatter names match the folders.
 - Coverage checklist: [`docs/README.md`](docs/README.md#coverage-checklist).
 
+## CI
+
+`.github/workflows/ci.yml` runs `python3 scripts/check.py` on push and pull
+request. It checks version and changelog, frontmatter, relative links, absolute
+paths, personal email addresses, secret patterns, tracked generated files,
+example shape, and bundle generation. It uses no secrets and no private denylist.
+
 ## Not yet covered
 
 - Install test with a specific agent CLI.

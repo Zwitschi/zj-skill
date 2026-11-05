@@ -1,5 +1,7 @@
 # Job Application Skills
 
+[![CI](https://github.com/Zwitschi/zj-skill/actions/workflows/ci.yml/badge.svg)](https://github.com/Zwitschi/zj-skill/actions/workflows/ci.yml)
+
 General, project-agnostic skills for building a baseline CV, evaluating a job
 posting, and producing tailored application documents. The skills are designed
 for agent CLIs that can read repository instructions and work with files.
