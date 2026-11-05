@@ -1,6 +1,7 @@
 # Job Application Skills
 
 [![CI](https://github.com/Zwitschi/zj-skill/actions/workflows/ci.yml/badge.svg)](https://github.com/Zwitschi/zj-skill/actions/workflows/ci.yml)
+[![Version](https://img.shields.io/github/v/release/Zwitschi/zj-skill?label=version&color=blue)](https://github.com/Zwitschi/zj-skill/releases/latest)
 
 General, project-agnostic skills for building a baseline CV, evaluating a job
 posting, and producing tailored application documents. The skills are designed

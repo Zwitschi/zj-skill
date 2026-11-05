@@ -89,3 +89,7 @@ Nothing yet.
 - Local smoke tests: Pi discovers `.agents/skills` and `.pi/skills` but not
   `.skills`; Codex discovers `.agents/skills` and completes a read-only skill run,
   reading `SKILL.md` and `shared/interaction.md` without modifying files.
+
+[Unreleased]: https://github.com/Zwitschi/zj-skill/compare/v0.2.0...HEAD
+[0.2.0]: https://github.com/Zwitschi/zj-skill/releases/tag/v0.2.0
+[0.1.0]: https://github.com/Zwitschi/zj-skill/releases/tag/v0.1.0
