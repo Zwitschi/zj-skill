@@ -22,6 +22,19 @@ Prepared 2026-11-05.
 The rights holder confirmed publication on 2026-11-05. Internal planning
 documents are not part of the public repository.
 
+## Repository metadata
+
+- Description: "General job-application skills for AI agent CLIs"
+- Homepage: https://github.com/Zwitschi/zj-skill/blob/main/docs/README.md
+- Topics: `agent-skills`, `ai-agents`, `career`, `claude-code`, `codex`, `cv`,
+  `hermes`, `job-application`, `job-search`, `pi-agent`, `prompt-engineering`,
+  `resume`
+- License display: GitHub reports `Other`/`NOASSERTION` because the license is a
+  custom Personal Use License, not an SPDX-listed license.
+- Install and usage links: `README.md` links `docs/INSTALL.md`,
+  `docs/WORKFLOWS.md`, `docs/COMPATIBILITY.md`, `docs/REFERENCE.md`, and
+  `docs/EXAMPLES.md`.
+
 ## Contents
 
 - Three skills: `zj-baseline-cv`, `zj-job-fit-evaluation`, `zj-tailored-application`.
