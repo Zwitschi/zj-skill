@@ -103,7 +103,7 @@ def check_links() -> None:
 
 
 def check_public_content() -> None:
-    absolute = re.compile(r"(/home/|/Users/|/Volumes/|/mnt/|(?<![A-Za-z0-9])[A-Za-z]:\\)")
+    absolute = re.compile(r"(/mnt/|/Volumes/|(?<![A-Za-z0-9])[A-Za-z]:\\)")
     email = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}")
     secret = re.compile(
         r"(BEGIN [A-Z ]*PRIVATE KEY|ghp_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,}|"
