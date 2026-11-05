@@ -6,6 +6,10 @@ semantic versioning.
 
 ## [Unreleased]
 
+Nothing yet.
+
+## [0.2.0] - 2026-11-05
+
 ### Added
 
 - Compatibility matrix with pinned sources, support tiers, portable conventions,
@@ -32,9 +36,6 @@ semantic versioning.
 
 ### Added
 
-- Renamed the three skills to unique `zj-` names: `zj-baseline-cv`,
-  `zj-job-fit-evaluation`, and `zj-tailored-application`. Folders, frontmatter,
-  docs, examples, bundles, and install paths use the new names.
 - `zj-baseline-cv` skill: complete baseline CV, skills list, verification report,
   and task-to-project conversion, with detailed phase references.
 - `zj-job-fit-evaluation` skill: configurable gates, Green/Red/Yellow keyword

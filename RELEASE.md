@@ -1,26 +1,26 @@
-# Release 0.1.0
+# Release 0.2.0
 
 Prepared 2026-11-05.
 
 ## Pre-flight status
 
-| Item                             | Status                           | Evidence                                                                                               |
-| -------------------------------- | -------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| Rights holder sign-off           | **Pending, publication blocker** | Package is derived from prompt material; the rights holder must confirm publication and use terms      |
-| License                          | Pass                             | Personal Use License in `LICENSE`                                                                      |
-| `DESIGN.md` removed from package | Pass                             | Internal record in `.github/instructions/SKILLS-DESIGN.md`; public contracts in `docs/architecture.md` |
-| Compatibility research           | Pass                             | `docs/COMPATIBILITY.md`; Pi and Codex tested, others documented-only                                   |
-| Public documentation             | Pass                             | All guides complete; `docs/README.md` and `LINT.md`                                                    |
-| Leak scan                        | Pass                             | No personal or project data outside `LICENSE`                                                          |
-| Frontmatter and links            | Pass                             | Names match folders; relative links resolve                                                            |
-| Example contract test            | Pass                             | `TEST-REPORT.md` and regenerated examples                                                              |
-| Bundle builder                   | Pass                             | `scripts/build_bundle.py`; `dist/` ignored                                                             |
-| Version                          | Pending                          | Currently `0.1.0`; planned `0.2.0` bump                                                                |
-| Repository                       | Pass                             | Clean local repo, tag `v0.1.0`, no remote                                                              |
-| Publication                      | Not started                      | No push, no remote                                                                                     |
+| Item                             | Status      | Evidence                                                                                    |
+| -------------------------------- | ----------- | ------------------------------------------------------------------------------------------- |
+| Rights holder sign-off           | Pass        | Confirmed 2026-11-05; internal planning documents are excluded from publication             |
+| License                          | Pass        | Personal Use License in `LICENSE`                                                           |
+| `DESIGN.md` removed from package | Pass        | Internal record kept outside the public package; public contracts in `docs/architecture.md` |
+| Compatibility research           | Pass        | `docs/COMPATIBILITY.md`; Pi and Codex tested, others documented-only                        |
+| Public documentation             | Pass        | All guides complete; `docs/README.md` and `LINT.md`                                         |
+| Leak scan                        | Pass        | No personal or project data outside `LICENSE`                                               |
+| Frontmatter and links            | Pass        | Names match folders; relative links resolve                                                 |
+| Example contract test            | Pass        | `TEST-REPORT.md` and regenerated examples                                                   |
+| Bundle builder                   | Pass        | `scripts/build_bundle.py`; `dist/` ignored                                                  |
+| Version                          | Pass        | `0.2.0` in `VERSION`; tag `v0.2.0`                                                          |
+| Repository                       | Pass        | Clean local repo, tags `v0.1.0` and `v0.2.0`, no remote                                     |
+| Publication                      | Not started | No push, no remote                                                                          |
 
-Do not publish until the rights holder confirms the source-prompt rights and the
-Personal Use License terms.
+The rights holder confirmed publication on 2026-11-05. Internal planning
+documents are not part of the public repository.
 
 ## Contents
 
@@ -82,13 +82,18 @@ location, workspace-folder, and absolute-path terms.
 
 ## Repository state
 
-The package is a standalone local repository:
+The package is published at https://github.com/Zwitschi/zj-skill.
 
-- branch `main`, one commit, annotated tag `v0.1.0`;
+- branch `main`, two commits, annotated tags `v0.1.0` and `v0.2.0`;
 - neutral commit identity, so the history does not expose a personal email
   address;
-- no remote configured;
-- no private denylist, local cache, or editor file committed.
+- remote `origin` points to the public repository;
+- no private denylist, local cache, or editor file committed;
+- no internal planning documents committed.
+
+Internal planning documents, personal workspace files, generated bundles, local
+caches, and the private denylist stay outside this repository. Do not add them to
+the public repository.
 
 To recreate the repository from the files:
 
@@ -98,8 +103,8 @@ git init -b main
 git config user.name "Release Preparation"
 git config user.email "release@example.test"
 git add .
-git commit -m "Release v0.1.0"
-git tag -a v0.1.0 -m "Release v0.1.0"
+git commit -m "Release v0.2.0"
+git tag -a v0.2.0 -m "Release v0.2.0"
 ```
 
 Before committing, re-run the checks above. Do not commit the private denylist,
@@ -114,7 +119,7 @@ Publication is the rights holder's action, not part of the preparation.
 2. Confirm that the package is intended to be source-available under the
    Personal Use License, not open source.
 3. Create an empty repository with the intended visibility.
-4. Add the remote, push `main`, then push the tag `v0.1.0`.
+4. Add the remote, push `main`, then push the tag `v0.2.0`.
 5. Inspect the public history for personal data, including the commit author and
    committer fields.
 6. Confirm that `LICENSE` is the only file naming the copyright holder.
@@ -122,8 +127,10 @@ Publication is the rights holder's action, not part of the preparation.
 
 ## Known limitations
 
-- The examples are a contract walkthrough, not an independent agent run.
-- Install has not been tested against a specific agent CLI.
+- The examples are a contract walkthrough, not a full independent run of every
+  workflow.
+- Install is tested with Pi 1.5.0 and Codex CLI 0.166.0; other agents are
+  documented-only.
 - No automated test suite exists yet; the checks are documented and manual.
 - The license restricts use and redistribution. Do not describe the package as
   open source.
